@@ -1,0 +1,12 @@
+The CSS property `calc()` is used to perform calculations on CSS values. However, there is a potential error if the calculation includes a unitless number. For example, the following code will cause an error in some browsers:
+
+```css
+.element { width: calc(50% - 10); }
+```
+
+The correct way to write this code is to include the unit of measurement in the unitless number:
+
+```css
+.element { width: calc(50% - 10px); }
+```
+This bug can be difficult to track down because it may not always cause an error. In some cases, it may simply result in unexpected behavior.
