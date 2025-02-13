@@ -1,0 +1,7 @@
+The solution is to always include the unit of measurement for all numbers used in the `calc()` function.  Here is the corrected code:
+
+```css
+.element { width: calc(50% - 10px); }
+```
+
+This will ensure that the calculation is performed correctly in all browsers.
